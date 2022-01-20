@@ -57,8 +57,8 @@ body {
 
 .navigation-list-link:focus, 
 .navigation-list-link:hover,
-.mail-adress:hover,
-.mail-adress:focus,
+.mail-address:hover,
+.mail-address:focus,
 .phone-number:hover,
 .phone-number:focus {
   color: var(--secondary-color)
@@ -201,4 +201,13 @@ font-size: 16px;
 line-height: 1.875;
 letter-spacing: 0.03em;
 color: var(--tertiary-color);
+}
+
+.contact-list-address:hover,
+.contact-list-address:focus,
+.contact-list-mail:hover,
+.contact-list-mail:focus,
+.contact-list-phone-number:hover,
+.contact-list-phone-number:focus {
+color: var(--secondary-color)
 }
