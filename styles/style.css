@@ -197,10 +197,10 @@ cursor: pointer;
 
 .our-projects-list-item-caption {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.875;
-letter-spacing: 0.03em;
-color: var(--tertiary-color);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--tertiary-color);
 }
 
 .contact-list-address:hover,
@@ -209,5 +209,5 @@ color: var(--tertiary-color);
 .contact-list-mail:focus,
 .contact-list-phone-number:hover,
 .contact-list-phone-number:focus {
-color: var(--secondary-color)
+  color: var(--secondary-color)
 }
