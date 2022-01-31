@@ -47,6 +47,10 @@ p {
   height: 80px;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .navigation-link {
   margin-right: 93px;
 }
@@ -119,7 +123,6 @@ p {
 }
 
 .heading {
-  font: Roboto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -154,7 +157,8 @@ p {
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -164,7 +168,6 @@ p {
 
 .advantages-list-item {
   list-style: none;
-  margin-top: 94px;
   width: 270px;
 }
 
@@ -175,6 +178,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   height: 16px;
+  margin-bottom: 10px;
 }
 
 .advantages-list-description {
@@ -199,6 +203,10 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+.section-heading-first {
+  margin-top: 94px;
 }
 
 .our-team {
@@ -280,20 +288,50 @@ p {
   line-height: 1.625;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: 0px;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
-.filters-list,
-.our-projects-list {
-  list-style: none;
+.filters-list-element:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filters-btn:hover,
 .filters-button:focus {
   color: var(--quaternary-color);
   background-color: var(--secondary-color);
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.filters-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 /* ===== OUR PROJECTS ===== */
+
+.our-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.our-projects-list-item {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.our-projects-list-item:nth-child(n + 4) {
+  margin-top: 30px;
+}
 
 .our-projects-list-item-heading {
   font-weight: 700;
@@ -301,6 +339,7 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  padding: 20px 24px 4px 20px;
 }
 
 .our-projects-list-item-caption {
@@ -309,6 +348,9 @@ p {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--tertiary-color);
+  width: 322px;
+  height: 30px;
+  padding: 0 20px 20px 20px;
 }
 
 .contact-list-address:hover,
