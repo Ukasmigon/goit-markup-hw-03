@@ -157,8 +157,7 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin: 94px auto;
 }
 
 .advantages-list {
@@ -205,11 +204,8 @@ p {
   margin-bottom: 50px;
 }
 
-.section-heading-first {
-  margin-top: 94px;
-}
-
 .our-team {
+  padding: 94px 0;
   background-color: var(--second-background);
 }
 
